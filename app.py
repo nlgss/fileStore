@@ -19,8 +19,8 @@ linkList = {
     "DeAr 2024" : "https://nlgss.github.io/kaipulla/?val=4-5-6-7-8-9",
     "Rebel 2024" : "https://nlgss.github.io/kaipulla/?val=10-11-12-13-14-15",
     "Premalu 2024" : "https://nlgss.github.io/kaipulla/?val=16-17-18-19-20-21",
-    "The family star 2024" : "https://nlgss.github.io/kaipulla/?val=",
-    "Siren 2024" : "https://nlgss.github.io/kaipulla/?val="
+    "The family star 2024" : "https://nlgss.github.io/kaipulla/?val=22-23-24-25-26-27",
+    "Siren 2024" : "https://nlgss.github.io/kaipulla/?val=28-29-30-31-32-33"
 }
 
 @bot.message_handler(commands=['start'])

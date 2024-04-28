@@ -74,5 +74,7 @@ def handle_group_messages(message):
         bot.reply_to(message, f'*Hello @{message.from_user.username}\nClick on a link below to get file\nIf requested file is not found, check spelling*', reply_markup=markup, parse_mode="Markdown")
 
 
-# Start the bot
-bot.polling()
+if __name__ == "__main__":
+    bot.polling()
+    app.run(debug=True, port=8000)
+    

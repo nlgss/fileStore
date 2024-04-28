@@ -2,6 +2,7 @@
 # CHANNEL_ID = "-1002075467673"
 # User = "1065291871"
 import telebot
+import asyncio
 from telebot import types
 from flask import Flask
 from fuzzywuzzy import fuzz
@@ -75,6 +76,11 @@ def handle_group_messages(message):
 
 
 if __name__ == "__main__":
-    bot.polling()
+    bot_polling_task = asyncio.create_task(bot.polling())
+
+    # Start the Flask web server asynchronously
     app.run(debug=True, port=8000)
+
+    # Wait for both tasks to complete
+    asyncio.get_event_loop().run_until_complete(bot_polling_task)
     

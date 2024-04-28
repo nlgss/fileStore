@@ -74,6 +74,9 @@ def handle_group_messages(message):
             
         bot.reply_to(message, f'*Hello @{message.from_user.username}\nClick on a link below to get file\nIf requested file is not found, check spelling*', reply_markup=markup, parse_mode="Markdown")
 
+@app.route('/')
+def index():
+    return make_response('', 200)
 
 if __name__ == "__main__":
     bot_polling_task = asyncio.create_task(bot.polling())

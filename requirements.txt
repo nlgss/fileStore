@@ -3,3 +3,4 @@ pyTelegramBotAPI
 fuzzywuzzy
 gunicorn
 uvicorn
+asyncio
